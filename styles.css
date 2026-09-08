@@ -1,0 +1,57 @@
+body {
+  background-color: hsl(0, 9%, 91%);
+  display: flex;
+  gap: 15px;
+}
+
+.first-wrapper {
+  display: grid;
+  gap: 15px;
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.second-wrapper {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.create-card {
+  background-color: hsl(31, 66%, 93%);
+}
+
+.write-card {
+  background-color: hsl(39, 100%, 71%);
+}
+
+.social-card {
+  background-color: hsl(256, 67%, 59%);
+}
+
+.manage-card {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.maintain-card {
+  background-color: hsl(39, 100%, 71%);
+}
+
+.schedule-card {
+  background-color: hsl(254, 88%, 90%);
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+.grow-card {
+  background-color: hsl(256, 67%, 59%);
+}
+
+.percentage-card {
+  background-color: hsl(0, 0%, 100%);
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
