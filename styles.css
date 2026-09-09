@@ -5,7 +5,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 5rem;
+  padding: 6rem 8rem;
 }
 
 .wrapper {
@@ -20,12 +20,34 @@ body {
 
 .create-card {
   background-color: hsl(31, 66%, 93%);
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0.9;
+  img {
+    align-self: center;
+    padding-top: 1.5rem;
+  }
 }
 
 .write-card {
   background-color: hsl(39, 100%, 71%);
   grid-column-start: 1;
   grid-row-start: span 2;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 0.9;
+  padding: 1rem;
+  max-width: 230px;
+  img {
+    align-self: center;
+    padding-top: 1.5rem;
+  }
 }
 
 .social-card {
@@ -37,14 +59,35 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  p:first-child {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 0.9;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
 }
 
 .manage-card {
   background-color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0.9;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  max-width: 250px;
+  overflow: hidden;
 }
 
 .maintain-card {
   background-color: hsl(39, 100%, 71%);
+  font-size: 2rem;
+  line-height: 0.9;
+  font-weight: 500;
+  padding-left: 1.5rem;
+  max-height: 275px;
+  overflow: hidden;
 }
 
 .schedule-card {
@@ -52,16 +95,48 @@ body {
   grid-column-start: 4;
   grid-row-start: 1;
   grid-row-end: span 2;
+  font-weight: 400;
+  padding-left: 2rem;
+  max-width: 240px;
+  overflow: hidden;
+  p:first-child {
+    font-size: 2rem;
+    line-height: 0.9;
+    font-weight: 500;
+  }
+  p:nth-of-type(2) {
+    max-width: 15ch;
+    font-size: 1.15rem;
+  }
 }
 
 .grow-card {
   background-color: hsl(256, 67%, 59%);
   grid-column-start: 3;
   grid-column-end: span 2;
+  display: flex;
+  padding: 1.5rem;
+  gap: 10px;
+  max-width: 535px;
+  p:nth-of-type(1) {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.1;
+  }
 }
 
 .percentage-card {
   background-color: hsl(0, 0%, 100%);
   grid-column-start: 2;
   grid-row-start: 3;
+  padding: 1.5rem;
+  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  p:first-child {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+  }
 }
