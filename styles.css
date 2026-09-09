@@ -1,22 +1,21 @@
 body {
   background-color: hsl(0, 9%, 91%);
   display: flex;
-  gap: 15px;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 5rem;
 }
 
-.first-wrapper {
+.wrapper {
   display: grid;
-  gap: 15px;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.grid-col-span-2 {
-  grid-column: span 2;
-}
-
-.second-wrapper {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
+.wrapper :nth-child(n) {
+  border-radius: 15px;
 }
 
 .create-card {
@@ -25,10 +24,19 @@ body {
 
 .write-card {
   background-color: hsl(39, 100%, 71%);
+  grid-column-start: 1;
+  grid-row-start: span 2;
 }
 
 .social-card {
   background-color: hsl(256, 67%, 59%);
+  color: hsl(0, 0%, 100%);
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .manage-card {
@@ -41,17 +49,19 @@ body {
 
 .schedule-card {
   background-color: hsl(254, 88%, 90%);
-  grid-column-start: 3;
+  grid-column-start: 4;
   grid-row-start: 1;
   grid-row-end: span 2;
 }
 
 .grow-card {
   background-color: hsl(256, 67%, 59%);
+  grid-column-start: 3;
+  grid-column-end: span 2;
 }
 
 .percentage-card {
   background-color: hsl(0, 0%, 100%);
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-row-start: 3;
 }
