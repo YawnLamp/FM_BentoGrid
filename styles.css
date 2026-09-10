@@ -1,6 +1,5 @@
 body {
   background-color: hsl(0, 9%, 91%);
-  display: flex;
   font-family: "DM Sans", sans-serif;
   display: flex;
   align-items: center;
@@ -138,5 +137,58 @@ body {
     font-size: 3rem;
     font-weight: 500;
     margin: 0;
+  }
+}
+
+@media (width <= 500px) {
+  body {
+    padding: 0.75rem 0.25rem;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper:nth-child(n) {
+    min-width: 325px;
+  }
+  .social-card {
+    order: 1;
+  }
+  .manage-card {
+    order: 2;
+    min-inline-size: 350px;
+  }
+  .maintain-card {
+    order: 3;
+    min-inline-size: 350px;
+  }
+  .schedule-card {
+    order: 4;
+    min-inline-size: 350px;
+    text-align: center;
+    padding-left: 0.5rem;
+    p:nth-of-type(2) {
+      padding-left: 5rem;
+    }
+  }
+  .grow-card {
+    order: 5;
+    min-inline-size: 325px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+  }
+  .percentage-card {
+    order: 6;
+    min-inline-size: 325px;
+  }
+  .create-card {
+    order: 7;
+    min-inline-size: 310px;
+  }
+  .write-card {
+    order: 8;
+    min-inline-size: 350px;
   }
 }
